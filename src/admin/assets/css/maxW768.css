@@ -1,0 +1,14 @@
+@media only screen and (max-width:768px) {
+    .sidebar .sidebarMain{
+        left: -100%;
+    }
+    .sidebar .content{
+        left: 0;
+        width: 100%;
+        transition: all 0s ease;
+    }
+    /* hide button side bar */
+    #hideSidebarIcon{
+        display: block;
+    }
+}

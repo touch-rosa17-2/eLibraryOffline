@@ -1,0 +1,205 @@
+.container-sidebar{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+/* content */
+.sidebar .content{
+    padding: 10px 0;
+    background-color: grey;
+    position: fixed;
+    top: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    transition: all 1s ease;
+}
+.sidebar .content label{
+    margin-left: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.sidebar .content span{
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+#showSidebar,
+#hideSidebar{
+    opacity: 0;
+}
+/* show sidebar  */
+#showSidebar:checked ~ ul{
+    left: 0;
+}
+/* hide sidebar */
+#hideSidebarIcon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: rgb(200,200,200);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+}
+#hideSidebarIcon:hover{
+    color: red;
+}
+#hideSidebar:checked ~ ul{
+    left: -100%;
+}
+/* sidebar */
+.sidebar ul {
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(48, 48, 48);
+    /* position: fixed;
+    left: 0;
+    top:-50px; */
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    padding: 0;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.sidebar .sidebarMain{
+    position: fixed;
+    top: -20px;
+    left: 0;
+    padding: 0;
+}
+.sidebar ul li{
+    width: 100%;
+    list-style: none;
+    float: left;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    transition: all 0.5s ease;
+    color:rgb(200,200,200);
+    font-family: sans-serif;
+}
+.sidebar ul li a:hover{
+    background-color: rgb(104,104,104);
+}
+.sidebar ul li a i{
+    width: 20px;
+    font-size: 20px;
+}
+.sidebar ul li a span{
+    margin-left: 30px;
+}
+.profile{
+    width: 100%;
+    height: 80px;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 7px 15px -4px rgba(0,0,0,0.5);
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+}
+.profileTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin-left: 20px;
+    color: rgb(200,200,200);
+    font-family: sans-serif;
+}
+.profileTitle .userName{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.profileTitle .typeUser{
+    font-size: 13px;
+    background-color: red;
+    padding: 2px ;
+    border-radius: 4px;
+}
+/* drop */
+.parentDrop{
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.classification{
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+    color: rgb(200,200,200);
+    font-family: sans-serif;
+}
+.classification:hover{
+    background-color: rgb(104,104,104);
+    cursor: pointer;
+}
+.classification i{
+    padding: 15px 30px;
+    width: 20px;
+    font-size: 20px;
+}
+.classification span{
+    padding: 15px 0;
+    font-size: 15px;
+}
+.parentDrop ul{
+    width: 220px;
+    height: 100%;
+    background-color: rgb(37, 37, 37);
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.sidebar ul li .childSub{
+    display: none;
+    transition: all 0.5s ease;
+}
+/* when click show showChild class */
+.sidebar ul li.showChild .childSub{
+    display: block;
+}
+/* dow icon */
+.sidebar ul li .iconDown{
+    transform: rotate(-90deg);
+    transition: all 0.5s ease;
+}
+.sidebar ul li.showChild .iconDown{
+    transform: rotate(90deg);
+}
+
+
+.sideDrop li a{
+    font-size: 15px;
+    border-radius: 5px;
+}
+.iconDown{
+    position: absolute;
+    right: 0;
+    float: right;
+}

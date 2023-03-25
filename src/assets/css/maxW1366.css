@@ -1,0 +1,54 @@
+@media only screen and (min-width: 1367px) {
+    .content-main{
+        width:1900px;
+        background-color: blue;
+    }
+    .slide-content{
+        padding: 45px 30px;
+        margin: 0 45px;
+    }
+}
+@media only screen and (max-width: 1366px) {
+    .container{
+        width: 100%;
+    }
+    .content-main{
+        width:80%;
+        background-color: rgb(165, 68, 255);
+    }
+    .items .picBook{
+        width: 120px;
+        height: 180px;
+    }
+    .itemBtn{
+        width: 120px;
+    }
+
+}
+@media only screen and (max-width: 960px){
+    .container{
+        width: 100%;
+    }
+    .content-main{
+        width: 80%;
+        background-color: red;
+        margin-top: 150px;
+    }
+    .items .picBook{
+        width: 120px;
+        height: 1៨0px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .items .picBook{
+        width: 80%;
+        height: 280px;
+    }
+    .itemBtn{
+        width: 120px;
+    }
+
+}
+@media only screen and (max-width: 480px){
+       
+}
