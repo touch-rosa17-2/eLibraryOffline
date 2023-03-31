@@ -1,12 +1,16 @@
 @media only screen and (min-width: 1367px) {
     .content-main{
         width:1900px;
-        background-color: blue;
+        /* background-color: blue; */
     }
     .slide-content{
         padding: 45px 30px;
         margin: 0 45px;
     }
+    .profile-pic{
+        display: none;
+    }
+    
 }
 @media only screen and (max-width: 1366px) {
     .container{
@@ -14,41 +18,443 @@
     }
     .content-main{
         width:80%;
-        background-color: rgb(165, 68, 255);
+        /* background-color: rgb(165, 68, 255); */
     }
     .items .picBook{
         width: 120px;
-        height: 180px;
+        height: 220px;
     }
     .itemBtn{
         width: 120px;
     }
 
 }
+@media only screen and (max-width: 1100px){
+    .leftFeatured{
+        width: 100%;
+        /* background-color: yellow; */
+    }
+    .featured-main{
+        width: 90%;
+    }
+    .item-featured{
+        width: 100%;
+    }
+    .item-before-hover img{
+        width: 150px;
+        height: 200px;
+    }
+    /* =====right feature */
+    .rightFeatured{
+        width: 100%;
+    }
+    .rightFeatured{
+        /* display: none; */
+        position: static;
+        height: fit-content;
+    }
+    .title-rightFea{
+        display:block;
+        background-color: #cecdca;
+        padding:12px 0;
+        width: 100%;
+        font-family: sans-serif;
+        font-size: 25px;
+        font-family: sans-serif;
+
+    }
+    .title-rightFea a{
+        margin-left: 20px;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        font-weight: bold;
+
+    }
+    .item-right-feature{
+        width: 95%;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .greate-book-title span{
+        padding: 20px;
+    }
+    .right-feature-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-right-feature{
+        width: 90px;
+        height: 150px;
+        margin: 10px 70px 10px 0;
+    }
+    .img-right-feature img:hover{
+        transform: scale(1.5);
+    }
+    /* underline */
+    .titleUnderline{
+        position: relative;
+        display: inline-block;
+        color: gray;
+        text-decoration: none;
+    }
+    .titleUnderline::before{
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0%;
+        height: 1px;
+        background-color: blue;
+        transition: width 0.3s ease;
+    }
+    .item-featured:hover .titleUnderline::before{
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 960px){
+    
+    .container{
+        width: 80%;
+    }
+    .content-main{
+        width: 100%;
+        /* position: relative; */
+        margin-top: 50px;
+    }
+    .slide-content{
+        padding: 25px 30px;
+        margin: 0 45px;
+    }
+    .items .picBook{
+        width: 100%;
+        height: 200px;
+    }
+    .itemBtn{
+        width: 100%;
+    }
+    .container-nav{
+        top: 0px;
+        width: 100%;
+        overflow: visible;
+    }
+    .item-featured:hover .item-before-hover img{
+        transform: scale(1);
+    }
+    .item-featured:hover{
+        background:none;
+    }
+    .item-featured:hover .detail-info h3{
+        color: green;
+    }
+    .item-featured:hover .detail-info{
+        color: blue;
+    }
+}
+@media only screen and (max-width: 768px){
     .container{
         width: 100%;
     }
     .content-main{
-        width: 80%;
-        background-color: red;
-        margin-top: 150px;
+        width: 100%;
+        position: relative;
     }
     .items .picBook{
-        width: 120px;
-        height: 1៨0px;
-    }
-}
-@media only screen and (max-width: 768px){
-    .items .picBook{
-        width: 80%;
-        height: 280px;
+        width: 100%;
+        height: 190px;
     }
     .itemBtn{
-        width: 120px;
+        width: 100%;
+        font-size: 13px;
+    }
+    /* ==================feature */
+    
+    /* ====featured books */
+    /* .featuredEbook{
+        position: absolute;
+    } */
+    .leftFeatured{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .title{
+        font-family: sans-serif;
+        font-size: 20px;
+        color:rgb(24,24,24)
+    }
+    .featured-main{
+        width: 90%;
+        padding: 10px 20px ;
+        margin: 10px 20px;
+        /* position: absolute; */
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .item-featured{
+        border: none;
+        border-bottom: 1px solid rgb(199, 195, 195);
+        /* margin: 10px 0; */
+        width: 300px;
+        padding: 20px 0;
+    }
+    /* .item-featured{
+        border:none;
+        border-bottom: 1px solid gray;
+        width: 80%;
+        padding: 10px 0;
+    } */
+    .item-before-hover a{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-decoration: none;
+        font-family: Arial;
+    }
+    .item-before-hover img{
+        width: 110px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .detail-info{
+        margin-left: 10px;
+        font-size: 13px;
+    }
+    .detail-info h3{
+        color: 	rgb(24,24,24);
+    }
+    .detail-info{
+
+        color: gray;
+    }
+    /* right feature */
+    
+    .img-right-feature{
+        width: 80px;
+        height: 130px;
+        margin: 10px 50px 10px 0;
+    }
+    .img-right-feature img:hover{
+        transform: scale(1.3);
+    }
+}
+@media only screen and (max-width: 560px){
+    .content-main{
+        width: 100%;
+        position: relative;
+        margin-top: -10px;
+    }
+    .item-branch a{
+        margin-left: 20px;
+    }
+    .items .picBook{
+        width: 100%;
+        height: 220px;
+    }
+    /* arrow btn */    
+    .btn-change{
+        display: none;
+    }
+    .container-nav{
+        top: -20px;
+        width: 100%;
+        overflow: visible;
+    }
+    .container-nav nav{
+        height: fit-content;
+        overflow: hidden;
+        margin-top: 0;
+
+    }
+    .container-nav nav ul{
+        flex-direction: column;
+        height: 200px;
+        width: 50%;
+        outline: none;
+        overflow: hidden;
+        margin-top: 20px;
+        border-radius: 5px;
+        left: -110%;
+    }
+    .showNavbar{
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+    }
+    .showNavbar i{
+        color: black;
+    }
+    #showNavbar:checked ~ ul{
+        left: 0%;
+    }
+    .container-nav nav ul li{
+        width: 100%;
+    }
+    .container-nav nav ul li:hover{
+        background-color: transparent;
+    }
+    .container-nav nav ul li:hover a{
+        color: red;
+    }
+    .login-nav{
+        position: static;
+    }
+    .container-nav nav ul li a{
+        padding: 0;
+    }
+    /* ==================feature */
+    .featuredEbook{
+        position: relative;
+    }
+    .featured-main{
+        margin-top: 20px;
+        transform: translate(-50%);
+        display: flex;
+        justify-content:center;
+        align-items: flex-start;
+        flex-direction: row;
+        width: 100%;
+    }
+    .item-featured{
+        border:none;
+        border-bottom: 1px solid gray;
+        /* display: flex; */
+        width: 80%;
+        padding: 10px 0;
+    }
+    .item-before-hover a{
+        display: flex;
+        /* justify-content: flex-start;
+        align-items: flex-start; */
+        text-decoration: none;
+        font-family: Arial;
+    }
+    .item-before-hover img{
+        width: 110px;
+        height: 150px;
+        object-fit:fill;
+    }
+    .detail-info{
+        margin-left: 20px;
+        font-size: 13px;
+    }
+    .detail-info h3{
+        color: 	rgb(24,24,24);
+    }
+    .detail-info{
+    
+        color: gray;
+    }
+    .rightFeatured{
+        display: none;
     }
 
 }
 @media only screen and (max-width: 480px){
-       
+    .container nav{
+        /* display: none; */
+    }
+    /* body */
+    .slide-content{
+        padding: 0 1px;
+    }
+    .content-main{
+        width: 100%;
+        position: relative;
+    }
+    .item-branch{
+        font-size: 17px;
+    }
+    .items .picBook{
+        margin: auto;
+        width: 100%;
+        height: 230px;
+    }
+    .itemBtn{
+        width: 100%;
+        height: 35px;
+        font-size: 13px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    /* arrow btn */    
+    .btn-change{
+        display: none;
+    }
+    /* ====featured books */
+    .featuredEbook{
+        /* position: absolute; */
+
+
+    }
+    .title{
+        font-family: sans-serif;
+        font-size: 13px;
+        color:rgb(24,24,24)
+    }
+    .featured-main{
+        width: auto;
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .item-featured{
+        border: none;
+        border-bottom: 1px solid gray;
+        margin: 10px 0;
+        width: 300px;
+    }
+    /* .item-featured{
+        border:none;
+        border-bottom: 1px solid gray;
+        width: 80%;
+        padding: 10px 0;
+    } */
+    .item-before-hover a{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-decoration: none;
+        font-family: Arial;
+    }
+    .item-before-hover img{
+        width: 110px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .detail-info{
+        margin-left: 10px;
+        font-size: 13px;
+    }
+    .detail-info h3{
+        color: 	rgb(24,24,24);
+    }
+    .detail-info{
+
+        color: gray;
+    }
+}
+@media only screen and (max-width:320px){
+    .items .picBook{
+        width: 1200px;
+        height: 150px;
+    }
+
+    
 }
