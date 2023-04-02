@@ -1,0 +1,140 @@
+.footer{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(37, 29, 29);
+    /* border: 1px solid black; */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2000;
+}
+.footer-top{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer-item{
+    padding: 50px 40px;
+    margin: 0 20px;
+    color: white;
+    width: fit-content;
+    /* background-color: gray; */
+}
+.footer-item h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+.footer-item ul{
+    padding: 0;
+}
+.footer-item ul li{
+    list-style: none;
+    padding: 5px 0;
+
+}
+.footer-item ul li a{
+    font-family: arial;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+}
+.footer-item ul li a{
+    display: inline;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.footer-item ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 0.5px;
+    background-color: rgb(138, 135, 135);
+    transition: width 0.2s ease;
+}
+.footer-item ul li a:hover::before{
+    width: 100%;
+}
+.footer-item ul li a:hover{
+    
+    opacity: 1;
+}
+/* keep intouch footer */
+.footer-item form{
+    margin-top: 50px;
+}
+.footer-item form input{
+    padding: 8px 10px;
+}
+.footer-item form input[type=text]{
+    background: none;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    border-top: 0.4px solid gray;
+    border-left: 0.4px solid gray;
+    border-right: 0.4px solid gray;
+}
+.footer-item form input[type=text]:focus{
+    background-color: rgb(255, 243, 243);
+    color: black;
+    outline: none;
+}
+.btnSubscribe{
+    background-color: red;
+    color: white;
+    text-transform:uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    border: none;
+}
+.btnSubscribe:hover{
+    transition: all 0.3s ease;
+    background-color: blue;
+}
+.footer-keepInTouch{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;   
+}
+.footer-social{
+    padding: 0 5px;
+}
+.footer-social a{
+    font-size: 20px;
+    color: white;
+    transition: all 0.2s ease;
+}
+.footer-social a:hover{
+    color: blue;
+}
+/* copyright section */
+.foooter-bottom{
+    width: 100%;
+    margin: auto;
+}
+.footer-copyRight{
+    padding: 20px;
+    color: rgb(124, 114, 114);
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.footer-copyRight a{
+    color: rgb(124, 114, 114);
+    text-decoration: none;
+}
+.footer-copyRight a:hover{
+    color: white;
+    opacity: 0.7;
+}

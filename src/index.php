@@ -126,7 +126,7 @@
                 <div class="leftFeatured">
                     <div class="title">
                         <a href="#">
-                            <span class="underlineStyle">Featured eBooks</span>
+                            <span class="underlineStyle">Featured <span style="color:green;">eBooks</span></span>
                         </a>
                     </div>
                     <div class="featured-main">
@@ -134,7 +134,7 @@
                             for($i=0; $i<5; $i++){
                                 
                         ?>  
-                        <div class="item-featured">
+                        <div class="item-featured" data-aos="zoom-in-right">
                             <div class="item-before-hover">
                                 <a href="">
                                     <img src="./assets/upload/imgBOok/picBook (<?php echo $i+1;?>).jpg" alt="">
@@ -165,7 +165,7 @@
                         <?php
                             for($x=0;$x<5;$x++){
                         ?>
-                        <div class="item-right-feature">
+                        <div class="item-right-feature" data-aos="zoom-in-left">
                             <a href="greate-book-title">
                                 <span class="underlineStyle">Technology book</span>
                             </a>
@@ -189,22 +189,32 @@
             </div>
 
             <!-- lastest arrivals -->
-            <!-- <div class="lastestArrivals">
-                <div class="title title-lastestArr">
+            <?php 
+                for($t=0; $t<3;$t++){
+            ?>
+            <div class="lastestArrivals" data-aos="fade-up" data-aos-duration="1200">
+                <div class="title section-title-lastestArr">
                     <a href="#">
-                        <span class="underlineStyle">Lastest Arrivals</span>
+                        <span class="underlineStyle">Lastest <span style="color:green;">Arrivals</span></span>
+                    </a>
+                    <a href="#" class="see-all">
+                        <span class="see-all-txt">
+                            See all
+                        </span>
+                        <i class="fa-solid fa-arrow-right see-all-arrow"></i>
+                    
                     </a>
                 </div>
                 <div class="content-lastestArrivals">
                     <?php
-                        for($i=0; $i<9; $i++){
+                        for($i=0; $i<10; $i++){
                     ?>
                     <div class="items-lastestArr">
                         <a href="#">
-                            <img src="./assets/upload/imgBook/picBook (6).jpg" alt="">
+                            <img src="./assets/upload/imgBook/picBook (<?php echo $i+1;?>).jpg" alt="">
                             <div class="title-lastestArr">
-                                <h3>Harry Poter</h3>
-                                <span>by Nikola Tesla</span>
+                                <h5>Harry Poter</h5>
+                                <p>by Nikola Tesla</p>
                             </div>
                         </a>
                     </div>
@@ -213,15 +223,31 @@
 
                     ?>
                 </div>
-            </div> -->
+            </div>
+            <?php
+                }
+            ?>
         </div>
+
+
+        <!-- footer -->
+        <section>
+            <?php
+                include './footer.php';
+            ?>
+        </section>
     </div>
       <!-- Swiper JS -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
   <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
-
 <script type="text/javascript">
+    //AOS
+    AOS.init({
+        duration: 700,
+        // disable: 'mobile',
+    });
 
+    //wrapper
     var swiper = new Swiper(".slide-content", {
         slidesPerView: 6,
         spaceBetween: 30,

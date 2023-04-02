@@ -14,6 +14,9 @@
     <!-- ===============js -->
     <!-- wrapper item -->
     <script src="./assets/js/script.js"></script>
+    <!-- AOS -->
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+    <script src="../node_modules/aos/dist/aos.js"></script>
     <!-- responsive 960px -->
     <!-- <link rel="stylesheet" href="./assets/css/maxW960.css"> -->
     <link rel="stylesheet" href="./assets/css/maxW1366.css">

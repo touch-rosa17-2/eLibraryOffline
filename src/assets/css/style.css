@@ -27,7 +27,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: #e1dcc5;
-    /* background-color: red; */
+    /* background-color: #3e88a3; */
     display: flex;
     justify-content: center;
 }
@@ -310,18 +310,95 @@ body{
     z-index: 1000;
 }
 /* lastest arrival */
-/* .lastestArrivals{
+.lastestArrivals{
     position: static;
+}
+.section-title-lastestArr{
+    margin: 50px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.see-all{
+    transition: all 0.3s ease;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .see-all:hover{
+    color: gray;
 } */
-.title-lastestArr{
-    margin: 50px 0;
+.see-all:hover .see-all-arrow{
+    margin-right: 15px;
+    color: red;
+}
+.see-all:hover .see-all-txt{
+    margin-right: 30px;
+    color: rgb(28, 50, 85);
+
+}
+.see-all-txt{
+    transition: none;
+    text-decoration: underline;
+}
+.see-all-arrow{
+    margin-right: 40px;
 }
 .content-lastestArrivals{
     /* height: 100px; */
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     justify-content: space-around;
     column-gap: 10px;
-    row-gap: 0px;
+    row-gap: 10px;
     flex-wrap: wrap;
+}
+.items-lastestArr{
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    transition: all 0.5s ease;
+
+}
+.items-lastestArr a {
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.items-lastestArr a img{
+    width: 120px;
+    height: 180px;
+    object-fit: fill;
+    border: 1px solid #cecdca;
+}
+.title-lastestArr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-lastestArr h5{
+    font-size: 18px;
+    color: green;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+.title-lastestArr p{
+    font-size: 13px;
+    margin-top: 0px;
+    transition: all 0.3s ease;
+}
+.items-lastestArr:hover{
+    transform: scale(1.2);
+}
+.items-lastestArr:hover + .items-lastestArr a img{
+    border-radius: 9px;
+}
+.items-lastestArr:hover .title-lastestArr h5{
+    text-decoration: underline solid blue 50%;
+    text-decoration-thickness: 1px;
+}
+.items-lastestArr:hover .title-lastestArr p{
+    color: red ;
 }
