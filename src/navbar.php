@@ -18,7 +18,7 @@
                 <a href="#">Browse</a>
             </li> -->
             <li>
-                <a href="#">Book</a>
+                <a href="./mainBookShow.php">Book</a>
             </li>
             <li>
                 <a href="#">Request Book</a>

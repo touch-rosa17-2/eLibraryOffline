@@ -10,6 +10,11 @@
     
     <!-- navbar -->    
     <link rel="stylesheet" href="./assets/css/navbarNew.css">
+    <!-- matindetailbook -->
+    <link rel="stylesheet" href="./assets/css/mainDetailBook.css">
+    <!-- homepage -->
+    <link rel="stylesheet" href="./assets/css/homePage.css">
+
 
     <!-- ===============js -->
     <!-- wrapper item -->
