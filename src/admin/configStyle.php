@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="./assets/css/sidebar.css">
     <!-- dashboard -->
     <link rel="stylesheet" href="./assets/css/dashboard.css">
-
+    <!-- admin-nav -->
+    <link rel="stylesheet" href="./assets/css/admin-nav.css">
+    <!-- mng-part-item -->
+    <link rel="stylesheet" href="./assets/css/mng-part-item.css">
     
+
     <!-- font awesome -->
     <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 
@@ -18,7 +22,7 @@
     <script src="./assets/js/script.js"></script>
     <!-- maxwidt 768px -->
     <link rel="stylesheet" href="./assets/css/maxW768.css">
-
+    <!-- responsive -->
+    <link rel="stylesheet" href="./assets/css/admin-responsive.css">
     <title>Dashboard</title>
 </head>
-<body>

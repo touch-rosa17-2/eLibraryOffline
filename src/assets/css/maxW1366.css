@@ -127,6 +127,14 @@
     .right-detail-content{
         margin-left: 30px;
     }
+    /* ======Homepage */
+    .homePage{
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .rightHome{
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 960px){
     
@@ -195,6 +203,14 @@
     .footer-keepInTouch{
         align-items: center;
         justify-content: center;
+    }
+    /* =======Homepage */
+    
+    .title-home h3{
+        font-size: 30px;
+    }
+    .title-home p{
+        font-size: 13px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -321,6 +337,15 @@
     .right-detail-content div{
         font-size: 13px;
     }
+    /* =====Homepage */
+    .logo-nav{
+        width: 50px;
+        height: 50px;
+        margin-left: 50px;
+    }
+    .leftHome{
+        margin-left: 50px;
+    }
 }
 @media only screen and (max-width: 560px){
     .content-main{
@@ -359,6 +384,7 @@
         margin-top: 40px;
         border-radius: 5px;
         left: -110%;
+        z-index: 1900;
     }
     .showNavbar{
         display: block;
@@ -463,11 +489,33 @@
     .right-detail-content{
         margin-left: 10px;
     }
+    /* =======Homepage */
+    .nav-homepage{
+        width: 80px;
+        height: 30px;
+    }
+    .nav-homepage a{
+        font-size: 13px;
+    }
+    .leftHome{
+        width: 100%;
+        z-index: 1000;
+    }
+    .rightHome{
+        position: absolute;
+        right: 0;
+        filter: blur(3px);
+    }
+    .title-home p{
+        color: rgb(70, 69, 69);
+    }
+
 
 }
 @media only screen and (max-width: 480px){
-    .container nav{
-        /* display: none; */
+    .container-nav nav ul{
+        z-index: 1200;
+        background-color: green;
     }
     /* body */
     .slide-content{

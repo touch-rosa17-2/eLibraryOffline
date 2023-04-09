@@ -2,11 +2,22 @@
         <?php
             include "./configStyle.php";
             include "./navbar.php";
+
+            // get title
+            if(isset($_GET["titleShow"])){
+                $titleShow = $_GET["titleShow"];
+            }else{
+                $titleShow = "Book";
+            }
         ?>
     
     <div class="main-show-book">
        <div class="title-book-type">
-            <h1>Book category via link here</h1>
+            <h1><?php echo $titleShow;
+                      
+                    
+                    ?></h1>
+            
             <span>/ <a href="./index.php">Home</a> /</span>
        </div> 
        <div class="sort-bar">
@@ -18,7 +29,7 @@
                         <option value="Lastest">Lastest</option>
                     </select>
                     <select name="sortTime" id="">
-                        <option value="Anytime">Anytime</option>
+                        <option value="Anytime">Anytim6e</option>
                         <option value="Year">Year</option>
                         <option value="Month">Month</option>
                         <option value="Week">Week</option>
@@ -51,7 +62,7 @@
                     </div>
                     <div class="detail-content-book">
                         <div class="left-detail-content">
-                            <div>
+                            <div class="author">
                                 <a href="#">Author name</a>
                                 | 
                                 <a href="#">Category book(TextBook)</a>

@@ -1,0 +1,170 @@
+@media only screen and (max-width:1366px) {
+    .container-admin-nav nav{
+        width: 100%;
+    }
+    .left-admin-nav h3{
+        font-size: 24px;
+    }
+    .profile-admin a img{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media only screen and (max-width:1080px) {
+    .left-admin-nav a h3{
+        display: none;
+    }
+}
+@media only screen and (max-width:960px) {
+    .container-admin-nav{
+        height: 60px;
+    }
+    .left-admin-nav a img{
+        width: 60px;
+        height: 60px;
+    }
+    .middle-admin-nav ul li{
+        padding: 18px 10px;
+        font-size: 17px;
+    }
+    .profile-admin a img{
+        width: 40px;
+        height:40px;
+    }
+
+}
+@media only screen and (max-width:768px) {
+    
+    .middle-admin-nav ul li{
+        border-right: 1px solid gray;
+    }
+    .middle-admin-nav ul li i {
+        display: none;
+    }
+    .admin-dropdown ul li{
+        border: none;
+    }
+    .profile-admin a img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width:620px) {
+    .container-admin-nav{
+        background: none;
+    }
+    .left-admin-nav{
+        display: none;
+    }
+    .container-admin-nav{
+        width: 100%;
+        height: fit-content;
+        position: relative;
+    }
+    .container-admin-nav nav{
+        flex-direction: column;
+        padding: 20px 0;
+        width: 100%;
+    }
+    .middle-admin-nav ul li{
+        max-width: 100%;
+        width:90vw;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        /* background-color: white; */
+        display: block;
+    }
+
+    /* .profile-admin a img{
+        width: 60px;
+        height: 60px;
+    } */
+    .profile-admin{
+        display: none;
+    }
+    .showNavbar{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 20px;
+    }
+    #showNavbar:checked ~ ul{
+        display: block;
+        margin-top: 15px;
+    }
+    
+    .middle-admin-nav ul{
+        width: 100%;
+        /* height: 100vh; */
+        background-color: rgb(60, 60, 60);
+        flex-direction: column;
+        margin-top: -120%;
+        position: static;
+    }
+    .hover-btn{
+        display: block;
+        
+    }
+    .admin-dropdown{
+        position: relative;
+        transition: all 0.3s ease;
+        padding: 0;
+    }
+    .admin-dropdown span{
+        display: inline-flex;
+    }
+    #dropdown-icon1,
+    #dropdown-icon2{
+        display: block;
+        margin-left: 10px;
+        position: static;
+    }
+    .admin-dropdown ul{
+        /* display: block; */
+        transition: all 0.3s ease;
+        margin-top: 15px;
+        padding: 0;
+        z-index: 1000;
+        background-color: black;
+    }
+    .admin-dropdown ul li a{
+        color: white;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

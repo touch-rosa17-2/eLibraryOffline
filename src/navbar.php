@@ -1,7 +1,7 @@
 <?php
     include './configStyle.php';
 ?>
-<div class="container-nav">
+<div class="container-nav" id="navbar">
     <nav>
         <input type="checkbox" name="showNavbar" id="showNavbar">
         <div class="showNavbar">
@@ -34,3 +34,15 @@
         </ul>
     </nav>
 </div>
+<script type="text/javascript">
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-60px";
+    }
+    prevScrollpos = currentScrollPos;
+    }
+</script>

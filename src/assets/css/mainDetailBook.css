@@ -86,6 +86,12 @@
 /* .content-items:hover { 
     background-color: rgb(218, 233, 233);
 } */
+.author a{
+    color: rgb(44, 44, 190);
+}
+.content-items:hover .left-detail-content div a{
+    color: blue;
+}
 .content-items:hover{
     cursor:cell;
 }

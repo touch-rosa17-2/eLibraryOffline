@@ -27,7 +27,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: #e1dcc5;
-    /* background-color: #3e88a3; */
+    /* background-color: white; */
     display: flex;
     justify-content: center;
     overflow-x: hidden;
@@ -43,7 +43,7 @@ body{
     margin: auto;
     width: 100%;
     
-    border: 1px solid rgb(200,200,200);
+    /* border: 1px solid rgb(200,200,200); */
     border-radius: 10px;
     /* background-color: #fff; */
     margin-top: 50px;
