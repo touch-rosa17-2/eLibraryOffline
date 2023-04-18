@@ -17,7 +17,7 @@
                     </a>
                 </div>
                 <div class="nav-homepage profile-link">
-                    <a href="#" >
+                    <a href="./admin/profile.php" >
                         <span>Profile</span>
                     </a>
                 </div>

@@ -2,6 +2,11 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
     "aos": "^2.3.4",
+    "bootstrap": "^4.5.0",
+    "bootstrap-icons": "^1.10.4",
+    "jquery": "^3.6.4",
+    "mdbootstrap": "^4.20.0",
+    "proper": "^0.5.1",
     "swiper": "^9.1.1"
   }
 }

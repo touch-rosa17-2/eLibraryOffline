@@ -30,13 +30,13 @@ include './configStyle.php';
                         <span class="hover-btn"><i class="fa fa-user"></i> Classification <i id="dropdown-icon1" class="fa fa-caret-down"></i></span>
                         <ul>
                             <li>
-                                <a href="#">Category</a>
+                                <a href="./categoryBook.php">Category</a>
                             </li>
                             <li>
-                                <a href="#">Author</a>
+                                <a href="./author.php">Author</a>
                             </li>
                             <li>
-                                <a href="#">Publisher</a>
+                                <a href="./publisher.php">Publisher</a>
                             </li>
                         </ul>
                     </li>
@@ -44,7 +44,7 @@ include './configStyle.php';
                         <span><i class="fa-solid fa-bars"></i> Library <i id="dropdown-icon2"  class="fa fa-caret-down"></i></span>
                         <ul>
                             <li>
-                                <a href="#">Add Book</a>
+                                <a href="./addBook.php">Add Book</a>
                             </li>
                             <li>
                                 <a href="#">Mng Book</a>
@@ -58,7 +58,7 @@ include './configStyle.php';
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-user"></i> User</a>
+                        <a href="./mngUser.php"><i class="fa fa-user"></i> User</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-warning"></i> Permission</a>

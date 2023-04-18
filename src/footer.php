@@ -13,71 +13,56 @@
     <div class="footer">
         <div class="footer-top">
             <div class="footer-item">
-                <h3>Footer Title</h3>
+                <h3>Library</h3>
                 <ul>
                     <li>
-                        <a href="#">Footer Items</a>
+                        <a href="#">Category</a>
                     </li>
                     <li>
-                        <a href="#">Footer Items</a>
+                        <a href="#">Author</a>
                     </li>
                     <li>
-                        <a href="#">Footer Items</a>
+                        <a href="#">Publisher</a>
                     </li>
                     <li>
-                        <a href="#">Footer Items</a>
-                    </li>
-                    <li>
-                        <a href="#">Footer Items</a>
-                    </li>
-                    <li>
-                        <a href="#">Footer Items</a>
+                        <a href="#">Language</a>
                     </li>
                 </ul>
             </div>
             <div class="footer-item">
-                <h3>Footer title2</h3>
+                <h3>Start</h3>
                 <ul> 
                     <li>
-                        <a href="#">Footer Items</a>
+                        <a href="./index.php">Home</a>
                     </li>
                     <li>
-                        <a href="#">Footer Items</a>
+                        <a href="./mainBookShow.php">Book</a>
                     </li>
                     <li>
-                        <a href="#">Footer Items</a>
+                        <a href="#">Request Book</a>
                     </li>
                     <li>
-                        <a href="#">Footer Items</a>
+                        <a href="#">Profile</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#">Footer Items</a>
                     </li>              
                     <li>
                         <a href="#">Footer Items</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div class="footer-item">
-                <h3>Footer title3</h3>
+                <h3>About</h3>
                 <ul>
                     <li>
-                        <a href="#">Footer Items</a>
+                        <a href="#">Privacy & Policy</a>
                     </li>
                     <li>
-                        <a href="#">Footer Items</a>
+                        <a href="#">Terms of Service</a>
                     </li>
                     <li>
-                        <a href="#">Footer Items</a>
-                    </li>
-                    <li>
-                        <a href="#">Footer Items</a>
-                    </li>
-                    <li>
-                        <a href="#">Footer Items</a>
-                    </li>
-                    <li>
-                        <a href="#">Footer Items</a>
+                        <a href="#">FAQs</a>
                     </li>
                 </ul>
             </div>

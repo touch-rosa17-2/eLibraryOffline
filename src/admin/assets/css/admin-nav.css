@@ -5,7 +5,9 @@
     /* max-width: 100%; */
     width: 100%;
     height: 80px;
+    display: block;
     background-color: rgb(60, 60, 60);
+    z-index: 1000;
 }
 .container-admin-nav nav{
     margin: auto;
@@ -60,6 +62,7 @@
     transition: all 0.3s ease;
 }
 .middle-admin-nav ul li{
+    z-index: 1100;
     list-style: none;
     padding: 28px 20px;
     font-family: sans-serif;
@@ -70,6 +73,7 @@
 .middle-admin-nav ul li:hover{
     background-color: rgb(20, 20, 20);
     color: rgb(200, 200, 240);
+    z-index: 1100;
 }
 .middle-admin-nav ul li a{
     text-decoration: none;
@@ -79,6 +83,7 @@
 .admin-dropdown {
     display: block;
     position: relative;
+    z-index: 1100;
 }
 #dropdown-icon1,
 #dropdown-icon2{
@@ -97,10 +102,12 @@
     padding: 0;
     flex-direction: column;
     position: absolute;
-    top: 95%;
+    top: 97%;
     left: 0;
     transition: all 0.3s ease;
     text-align: center;
+    background-color: white;
+    z-index: 1100;
 }
 .admin-dropdown ul li{
     /* padding: 10px 15px; */

@@ -510,6 +510,13 @@
         color: rgb(70, 69, 69);
     }
 
+    /* ============Dashboard */
+    /* *** Author */
+    .modal-box{
+        width: 90%;
+        background-color: yellow;
+    }
+
 
 }
 @media only screen and (max-width: 480px){

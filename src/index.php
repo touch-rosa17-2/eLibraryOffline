@@ -1,4 +1,11 @@
+<?php
+  session_start();
+
+?>
 <?php 
+    if(!isset($_SESSION["username"])){
+        header("refresh: 5, url= ./admin/formLogin.php");
+    }
     include './configStyle.php';
 ?>
 
