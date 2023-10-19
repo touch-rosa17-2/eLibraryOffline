@@ -2,9 +2,6 @@
     require "./config.php";
     ob_start();
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <?php
     include "./configStyle.php";

@@ -1,9 +1,9 @@
 <head>
 
     <?php
-        ob_start();
-        include "./configStyle.php";
-        require "./config.php";
+    ob_start();
+    include "./configStyle.php";
+    require "./config.php";
     ?>
     <style>
         body {
